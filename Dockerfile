@@ -7,9 +7,12 @@ COPY go.mod ./
 COPY go.sum ./
 
 RUN go mod download
+RUN apk add --no-cache bash
 
 COPY main.go ./
 
 RUN go build -o /docker-gs-ping
 
-CMD [ "/docker-crud" ]
+EXPOSE 3000
+
+CMD [ "/" ]
