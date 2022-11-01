@@ -12,4 +12,4 @@ COPY main.go ./
 
 RUN go build -o /docker-gs-ping
 
-CMD [ "/docker-gs-ping" ]
+CMD [ "/docker-crud" ]
