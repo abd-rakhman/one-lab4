@@ -8,6 +8,7 @@ COPY go.sum ./
 
 RUN go mod download
 RUN apk add --no-cache bash
+RUN apk add --no-cache libc6-compat
 
 COPY main.go ./
 
