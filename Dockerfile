@@ -12,8 +12,8 @@ RUN apk add --no-cache libc6-compat
 
 COPY main.go ./
 
-RUN go build -o /docker-gs-ping
+RUN go build -o /register-crud
 
 EXPOSE 3000
 
-CMD [ "/login-crud" ]
+CMD [ "/register-crud" ]
