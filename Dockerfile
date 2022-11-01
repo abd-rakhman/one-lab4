@@ -15,4 +15,4 @@ RUN go build -o /docker-gs-ping
 
 EXPOSE 3000
 
-CMD [ "/" ]
+CMD [ "/login-crud" ]
